@@ -1,8 +1,106 @@
+:root {
+    --pc-d: #e1d3d3;
+    --pc-l: #1a1a1a;
+
+    --b-d: #f7b0b0;
+    --b-l: #4b2a2a;
+}
+
+.bg {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    padding: 5rem 0 !important;
+}
+
 .bg {
     background-color: #000000;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 40px 40px;
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 30px 30px;
     background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+.butto {
+    border: none;
+    border-radius: 100px;
+    background-color: var(--b-d);
+    font-size: 3rem;
+    color: var(--b-l);
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease-in-out;
+    margin: 1 1 1 1px;
+}
+
+.butto:hover {
+    background-color: var(--b-l);
+    color: var(--b-d);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.butta {
+    border: none;
+    border-radius: 100px;
+    background-color: var(--pc-d);
+    font-size: 3rem;
+    color: var(--pc-l);
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease-in-out;
+    margin: 1 1 1 1px;
+    scale: 0.7;
+}
+
+.butta:hover {
+    background-color: var(--pc-l);
+    color: var(--pc-d);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.git {
+    color: var(--pc-d) !important;
+    text-decoration: none !important;
+    font-size: 1.4rem !important;
+}
+
+.pol {
+    font-size: 3rem;
+    width: 150px;
+    height: 150px;
+    background-color: #555555;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border-radius: 36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.project-card {
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--p-d);
+    }
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3d3030;
+    border-radius: 1rem;
+}
+
+.project-cards {
+    font-size: 1rem;
+    color: var(--pc-d);
+    max-width: 800px;
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 2rem !important;
+    gap: 2rem !important;
 }
