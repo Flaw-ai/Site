@@ -3,8 +3,14 @@
 import { useRouter } from "next/navigation";
 import "@/styles/footer.css";
 import "@/styles/style.css";
+import { faXTwitter, faInstagram, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Footer() {
+interface FooterProps {
+  currentYear: number;
+}
+
+export default function Footer({currentYear}: FooterProps) {
     const router = useRouter();
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -50,10 +56,6 @@ export default function Footer() {
                             <button type="submit" onClick={() => handleSubmit} disabled={true}>Submit</button>
                         </form>
                     </div>
-                    <div className="div2">
-                        <span>Made with ❤︎ and ambition</span>
-                        <h3>Flaw version@0.1.0</h3>
-                    </div>
                 </div>
                 <div className="div6">
                     <h2>lost???</h2>
@@ -61,22 +63,30 @@ export default function Footer() {
                     <button className="butta1" onClick={() => router.push("/products")}>Products &gt;</button><br />
                     <button className="butta1" onClick={() => router.push("/projects")}>Projects &gt;</button><br />
                 </div>
-                <div className="scials">
+                <div className="socials">
                     <div className="div7">
                         <h2>socials</h2>
-                        <button onClick={() => router.push("/twitter")}>Twitter</button>
-                        <button onClick={() => router.push("https://github.com/flaw-ai")}>GitHub</button>
-                        <button onClick={() => router.push("/linkedin")}>LinkedIn</button>
+                        <FontAwesomeIcon className="icons" icon={faXTwitter} onClick={() => router.push("/twitter")} />
+                        <FontAwesomeIcon className="icons" icon={faInstagram} onClick={() => router.push("/instagram")} />
+                        <FontAwesomeIcon className="icons" icon={faGithub} onClick={() => router.push("https://github.com/flaw-ai")} />
+                        <FontAwesomeIcon className="icons" icon={faLinkedinIn} onClick={() => router.push("https://linkedin.com/in/rudra-pratap-sinha")} />
                     </div>
                     <div className="div8">
                         <h2>contact</h2>
-                        <p>Mail at <a href="mailto:rudra070311@gmail.com" onClick={() => copyToClipboard("rudra070311@gmail.com")}>rudra070311@gmail.com</a></p>
+                        <p>Mail at <br /><a href="mailto:rudra070311@gmail.com" onClick={() => copyToClipboard("rudra070311@gmail.com")}>rudra070311@gmail.com</a></p>
                     </div>
                 </div>
             </main>
-            <hr />
+            <hr /><br />
             <div className="div9">
-                    <p>&copy; {new Date().getFullYear()} Flaw AI. All rights reserved.</p>
+                <p>&copy; {currentYear} Flaw AI. All rights reserved.</p>
+                <div className="div2">
+                    <div className="livebutton" />
+                    <div className="div22">
+                        <h3>Flaw version@0.1.0</h3>
+                        <span>Made with ❤︎ and ambition</span>
+                    </div>
+                </div>
             </div>
         </ >
     )

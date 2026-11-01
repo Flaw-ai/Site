@@ -2,7 +2,6 @@
 
 import "@/styles/style.css";
 import "@/styles/main.css";
-import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import { useRouter } from "next/navigation";
 import ProjectCard from "@/components/project_card";
@@ -45,7 +44,6 @@ export default function Home() {
           </div>
           <button className="butto" onClick={() => handle("/projects")}>see all projects ➤</button>
         </div>
-        <Footer />
       </main>
     </div>
   );
