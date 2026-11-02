@@ -58,7 +58,7 @@
     font-size: 1.5rem;
 }
 
-.projects {
+.projects, .doc, .products {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,14 +66,14 @@
     padding: 5rem 0;
 }
 
-.projects a {
+.projects a, .doc a, .products a {
     font-size: 4rem;
     font-weight: bold;
     color: var(--b-d);
     text-decoration: underline;
 }
 
-.projects p {
+.projects p, .doc p, .products p {
     font-size: 1rem;
     color: var(--pc-d);
     max-width: 800px;

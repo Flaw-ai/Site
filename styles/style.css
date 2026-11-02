@@ -43,6 +43,12 @@
     cursor: pointer;
 }
 
+.butto:disabled {
+    background-color: var(--b-l);
+    color: var(--p-d);
+    cursor: not-allowed;
+}
+
 .butta {
     border: none;
     border-radius: 100px;
@@ -116,12 +122,6 @@
     flex-direction: row !important;
     padding: 2rem !important;
     gap: 2rem !important;
-}
-
-hr {
-    border: 1px solid var(--pc-d);
-    align-items: center;
-    text-align: center;
 }
 
 .livebutton {

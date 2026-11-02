@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <div className="bg">
       <main className="bg">
-        {/*<Nav />*/}
         <div className="header">
           <div className="fle">
             <h1 className="title">flaw</h1>
@@ -32,7 +31,6 @@ export default function Home() {
           <p>i&apos;m a student, an independent builder, and someone who&apos;s more interested in understanding how things work than simply using them. flaw ai labs is my attempt to build intelligence from the ground up — training models from scratch, engineering datasets, experimenting with architectures, and learning through every failure along the way.</p>
           <span>no big team . no fancy lab . just curiosity, code, and the willingness to start from zero.</span>
         </div>
-        <hr style={{"fontSize": 20}}></hr>
         <div className="projects">
           <a href="/projects">projects</a>
           <p>i&apos;ve been working on a few projects that i&apos;m excited to share. these are the ones that i&apos;ve been able to make public so far, but there are many more in the works.</p>
@@ -43,6 +41,19 @@ export default function Home() {
             <ProjectCard title="flaw studio" description="a platform for training and deploying custom ai models, with a focus on accessibility and ease of use." link="/studio" />
           </div>
           <button className="butto" onClick={() => handle("/projects")}>see all projects ➤</button>
+        </div>
+        <div className="products">
+          <a href="/products">products</a>
+          <p>i&apos;ve been working on a few products that i&apos;m excited to share. these are the ones that i&apos;ve been able to make public so far, but there are many more in the works.</p>
+          <p>if you&apos;re interested in collaborating or contributing to any of these products, feel free to reach out!</p>
+          <h1>Coming soon...</h1>
+          <button className="butto" onClick={() => handle("/products")} disabled={true}>see all products ➤</button>
+        </div>
+        <div className="doc">
+          <a href="/docs">docs and papers</a>
+          <p>i&apos;ve been documenting my journey of building intelligence from the ground up. these are the notes, tutorials, and guides that i&apos;ve created along the way, and i hope they can be helpful to others who are interested in learning more about ai and machine learning.</p>
+          <p>if you&apos;re interested in contributing to the docs or have any questions, feel free to reach out!</p>
+          <button className="butto" onClick={() => handle("/docs")}>see all docs ➤</button>
         </div>
       </main>
     </div>
