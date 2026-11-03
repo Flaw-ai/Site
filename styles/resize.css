@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem 0;
+    }
+
+    .projects, .doc, .products {
+        padding: 2rem 0;
+    }
+
+    .div00 {
+        padding: 2rem 0;
+        display: flex !important;
+        flex-direction: column!important;
+    }
+
+    .div2 {
+        display: none !important;
+    }
+    
+    .bg {
+        text-align: center;
+        padding: 1rem 2rem !important;
+    }
+
+    .about, .projects, .doc, .products {
+        padding: 1rem 2rem !important;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .nest1, .nest2, .div00, .pol {
+        text-align: center;
+    }
+
+    .header {
+        padding: 0 0 0 0 !important;
+
+        p  {
+            scale: 0.65;
+        }
+    }
+
+    .fle {
+        flex-direction: column;
+
+        h1 {
+            scale: 0.65;
+        }
+
+        .subtitle {
+            display: none;
+        }
+    }
+}

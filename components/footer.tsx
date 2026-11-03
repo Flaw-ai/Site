@@ -5,6 +5,7 @@ import "@/styles/footer.css";
 import "@/styles/style.css";
 import { faXTwitter, faInstagram, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "@/styles/resize.css";
 
 interface FooterProps {
   currentYear: number;
@@ -26,7 +27,7 @@ export default function Footer({currentYear}: FooterProps) {
 
     return(
         <>
-            <main>
+            <main className="div00">
                 <div className="div0">
                     <div className="nest1">
                         <div className="div1">

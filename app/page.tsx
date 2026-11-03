@@ -2,7 +2,7 @@
 
 import "@/styles/style.css";
 import "@/styles/main.css";
-import Nav from "@/components/nav";
+import "@/styles/resize.css";
 import { useRouter } from "next/navigation";
 import ProjectCard from "@/components/project_card";
 
@@ -13,7 +13,6 @@ export default function Home() {
   }
   return (
     <div className="bg">
-      <main className="bg">
         <div className="header">
           <div className="fle">
             <h1 className="title">flaw</h1>
@@ -55,7 +54,6 @@ export default function Home() {
           <p>if you&apos;re interested in contributing to the docs or have any questions, feel free to reach out!</p>
           <button className="butto" onClick={() => handle("/docs")}>see all docs ➤</button>
         </div>
-      </main>
     </div>
   );
 }

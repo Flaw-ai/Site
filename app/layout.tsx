@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import { cacheLife } from "next/dist/server/use-cache/cache-life";
 import "@/styles/style.css";
+import "@/styles/resize.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +37,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children} <Footer currentYear={currentYear} /></body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">{children} <Footer currentYear={currentYear} /></body>
     </html>
   );
 }

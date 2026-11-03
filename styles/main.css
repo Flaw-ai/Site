@@ -78,17 +78,3 @@
     color: var(--pc-d);
     max-width: 800px;
 } 
-
-@media (max-width: 1000px) {
-    .title {
-        font-size: 190px;
-    }
-
-    .subtitle {
-        display: none;
-    }
-
-    .description {
-        font-size: 0.8rem;
-    }
-}
