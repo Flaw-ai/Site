@@ -1,5 +1,6 @@
 import { useRouter } from "next/navigation";
 import "@/styles/style.css";
+import "@/styles/resize.css";
 
 export default function ProjectCard({ title, description, link }: { title: string; description: string; link: string }) {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function ProjectCard({ title, description, link }: { title: strin
     <div className="project-card">
       <h2>{title}</h2>
       <p>{description}</p>
-      <button className="butta" onClick={() => handle(link)}>more ➤</button>
+      <button className="butta" onClick={() => handle(link)}><span>more </span>➤</button>
     </div>
   );
 }

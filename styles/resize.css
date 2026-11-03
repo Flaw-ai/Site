@@ -49,4 +49,18 @@
             display: none;
         }
     }
+    
+    span {
+        display: none !important;
+    }
+
+    .project-cards {
+        flex-direction: column !important;
+        padding: 1rem !important;
+        gap: 1rem !important;
+
+        p {
+            display: none !important;
+        }
+    }
 }

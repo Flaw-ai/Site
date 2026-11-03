@@ -23,7 +23,7 @@ export default function Home() {
           </p>
         </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
-          <button className="butto" onClick={() => handle("/features")}>Explore Features ➤</button>
+          <button className="butto" onClick={() => handle("/features")}><span>Explore Features</span> ➤</button>
         </div>
         <div className="about">
           <h2>not us. just me.</h2>
@@ -39,20 +39,20 @@ export default function Home() {
             <ProjectCard title="flaw" description="an open-source, self-hosted, and privacy-focused ai assistant that can be run on your own machine." link="/flaw" />
             <ProjectCard title="flaw studio" description="a platform for training and deploying custom ai models, with a focus on accessibility and ease of use." link="/studio" />
           </div>
-          <button className="butto" onClick={() => handle("/projects")}>see all projects ➤</button>
+          <button className="butto" onClick={() => handle("/projects")}><span>see all projects </span>➤</button>
         </div>
         <div className="products">
           <a href="/products">products</a>
           <p>i&apos;ve been working on a few products that i&apos;m excited to share. these are the ones that i&apos;ve been able to make public so far, but there are many more in the works.</p>
           <p>if you&apos;re interested in collaborating or contributing to any of these products, feel free to reach out!</p>
           <h1>Coming soon...</h1>
-          <button className="butto" onClick={() => handle("/products")} disabled={true}>see all products ➤</button>
+          <button className="butto" onClick={() => handle("/products")} disabled={true}><span>see all products </span>➤</button>
         </div>
         <div className="doc">
           <a href="/docs">docs and papers</a>
           <p>i&apos;ve been documenting my journey of building intelligence from the ground up. these are the notes, tutorials, and guides that i&apos;ve created along the way, and i hope they can be helpful to others who are interested in learning more about ai and machine learning.</p>
           <p>if you&apos;re interested in contributing to the docs or have any questions, feel free to reach out!</p>
-          <button className="butto" onClick={() => handle("/docs")}>see all docs ➤</button>
+          <button className="butto" onClick={() => handle("/docs")}><span>see all docs </span>➤</button>
         </div>
     </div>
   );
