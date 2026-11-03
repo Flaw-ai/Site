@@ -1,6 +1,5 @@
 import { useRouter } from "next/navigation";
 import "@/styles/style.css";
-import "@/styles/resize.css";
 
 export default function ProjectCard({ title, description, link }: { title: string; description: string; link: string }) {
   const router = useRouter();

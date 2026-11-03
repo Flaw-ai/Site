@@ -10,7 +10,7 @@
     .div00 {
         padding: 2rem 0;
         display: flex !important;
-        flex-direction: column!important;
+        flex-direction: column !important;
     }
 
     .div2 {
@@ -32,22 +32,22 @@
 
     .header {
         padding: 0 0 0 0 !important;
+    }
 
-        p  {
-            scale: 0.65;
-        }
+    .header p {
+        font-size: 0.8rem;
     }
 
     .fle {
         flex-direction: column;
+    }
 
-        h1 {
-            scale: 0.65;
-        }
+    .fle h1 {
+        font-size: 1.5rem;
+    }
 
-        .subtitle {
-            display: none;
-        }
+    .fle .subtitle {
+        display: none;
     }
     
     span {
@@ -58,9 +58,9 @@
         flex-direction: column !important;
         padding: 1rem !important;
         gap: 1rem !important;
+    }
 
-        p {
-            display: none !important;
-        }
+    .project-cards p {
+        display: none !important;
     }
 }

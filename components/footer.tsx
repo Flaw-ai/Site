@@ -5,7 +5,6 @@ import "@/styles/footer.css";
 import "@/styles/style.css";
 import { faXTwitter, faInstagram, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import "@/styles/resize.css";
 
 interface FooterProps {
   currentYear: number;

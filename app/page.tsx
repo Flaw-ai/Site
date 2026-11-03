@@ -2,7 +2,6 @@
 
 import "@/styles/style.css";
 import "@/styles/main.css";
-import "@/styles/resize.css";
 import { useRouter } from "next/navigation";
 import ProjectCard from "@/components/project_card";
 
